@@ -1,0 +1,446 @@
+/* Change this file to get your personal Portfolio */
+
+// To change portfolio colors globally go to the  _globalColor.scss file
+
+import emoji from "react-easy-emoji";
+import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your file name for custom animation
+
+// Splash Screen
+
+const splashScreen = {
+  enabled: true, // set false to disable splash screen
+  animation: splashAnimation,
+  duration: 2000 // Set animation duration as per your animation
+};
+
+// Summary And Greeting Section
+
+const illustration = {
+  animated: true // Set to false to use static SVG
+};
+
+const greeting = {
+  username: "Muzammil",
+  title: "Hi all, I'm Muzammil",
+  subTitle: emoji(
+    "Turning coffee ☕ into high-performance mobile apps. Flutter & Android developer with 6+ years of battle-tested experience."
+  ),
+  resumeLink:
+    "https://drive.google.com/file/d/11SXmpJAVbDC_l3Njl3giXEb88HlhVVr1/view?usp=sharing", // Set to empty to hide the button
+  displayGreeting: true // Set false to hide this section, defaults to true
+};
+
+// Social Media Links
+
+const socialMediaLinks = {
+  linkedin: "https://www.linkedin.com/in/muhammad-muzammil-046957176/",
+  github: "https://github.com/muzammilkhn",
+  gmail: "mzmkhn123@gmail.com",
+  medium: "https://medium.com/@mmuzammilkhan",
+  stackoverflow: "https://stackoverflow.com/users/14542093/muhammad-muzammil",
+  // Instagram, Twitter and Kaggle are also supported in the links!
+  // To customize icons and social links, tweak src/components/SocialMedia
+  display: true // Set true to display this section, defaults to false
+};
+
+// Skills Section
+
+const skillsSection = {
+  title: "What I do",
+  subTitle: "CRAZY MOBILE APP DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  skills: [
+    emoji(
+      "⚡ Build high-performance mobile apps using Flutter and native Android/iOS that are fast, smooth, and user-loved"
+    ),
+    emoji("🔌 Integrate powerful third-party services like Firebase, REST APIs, payments, maps, and notifications"),
+    emoji(
+      "☁️ Handle backend & cloud workflows with SQL/NoSQL databases, cloud services, and modern tooling"
+    ),
+    emoji(
+      "🚀 Ship production-ready apps on time—thriving in fast-paced teams with a strong delivery mindset"
+    )
+  ],
+
+  /* Make Sure to include correct Font Awesome Classname to view your icon
+https://fontawesome.com/icons?d=gallery */
+
+  softwareSkills: [
+    {
+      skillName: "Flutter",
+      svgIcon: require("./assets/images/flutterLogo.svg").default
+    },
+    {
+      skillName: "Android",
+      fontAwesomeClassname: "fab fa-android"
+    },
+    {
+      skillName: "Apple",
+      fontAwesomeClassname: "fab fa-apple"
+    },
+    {
+      skillName: "Google Play",
+      fontAwesomeClassname: "fab fa-google-play"
+    },
+    {
+      skillName: "App Store",
+      fontAwesomeClassname: "fab fa-app-store"
+    },
+    {
+      skillName: "sass",
+      fontAwesomeClassname: "fab fa-sass"
+    },
+    {
+      skillName: "Java",
+      fontAwesomeClassname: "fab fa-java"
+    },
+    {
+      skillName: "swift",
+      fontAwesomeClassname: "fab fa-swift"
+    },
+    {
+      skillName: "Python",
+      fontAwesomeClassname: "fab fa-python"
+    },
+    {
+      skillName: "sql-database",
+      fontAwesomeClassname: "fas fa-database"
+    },
+    {
+      skillName: "dotnet",
+      fontAwesomeClassname: "fas fa-code"
+    },
+    {
+      skillName: "Vertex AI",
+      fontAwesomeClassname: "fab fa-google"
+    },
+    {
+      skillName: "firebase",
+      fontAwesomeClassname: "fas fa-fire"
+    },
+    {
+      skillName: "Apple Pay",
+      fontAwesomeClassname: "fab fa-apple-pay"
+    },
+    {
+      skillName: "Google Pay",
+      fontAwesomeClassname: "fab fa-google"
+    },
+    {
+      skillName: "Github",
+      fontAwesomeClassname: "fab fa-github"
+    },
+    {
+      skillName: "Bitbucket",
+      fontAwesomeClassname: "fab fa-bitbucket"
+    }
+  ],
+  display: true // Set false to hide this section, defaults to true
+};
+
+// Education Section
+
+const educationInfo = {
+  display: true, // Set false to hide this section, defaults to true
+  schools: [
+    {
+      schoolName: "Karachi University",
+      logo: require("./assets/images/ubitLogo.jpeg"),
+      subHeader: "Bachelors of Science in Software Engineering",
+      duration: "July 2016 - July 2019",
+      desc: "Participated in the research of Neural Networks",
+    },
+    // {
+    //   schoolName: "Stanford University",
+    //   logo: require("./assets/images/stanfordLogo.png"),
+    //   subHeader: "Bachelor of Science in Computer Science",
+    //   duration: "September 2013 - April 2017",
+    //   desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
+    //   descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
+    // }
+  ]
+};
+
+// Your top 3 proficient stacks/tech experience
+
+const techStack = {
+  viewSkillBars: true, //Set it to true to show Proficiency Section
+  experience: [
+    {
+      Stack: "Mobile Apps / Design", //Insert stack or technology you have experience in
+      progressPercentage: "90%" //Insert relative proficiency in percentage
+    },
+    {
+      Stack: "Backend",
+      progressPercentage: "60%"
+    },
+    {
+      Stack: "Integration of Third-Party Services and APIs",
+      progressPercentage: "70%"
+    },
+    {
+      Stack: "Programming",
+      progressPercentage: "80%"
+    }
+  ],
+  displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
+};
+
+// Work experience section
+
+const workExperiences = {
+  display: true, //Set it to true to show workExperiences Section
+  experience: [
+    {
+      role: "Sr. Software Engineer",
+      company: "OCT Daily",
+      companylogo: require("./assets/images/octdailyLogo.jpeg"),
+      headerColor: "#c3d361",
+      date: "Nov 2025 – Present",
+      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      descBullets: [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+      ]
+    },
+    {
+      role: "Sr. Software Engineer",
+      company: "Techlogix",
+      companylogo: require("./assets/images/techlogixLogo.jpeg"),
+      headerColor: "#601a15",
+      date: "Apr 2022 – Nov 2025",
+      desc: "Architected high-performance mobile solutions and leading cross-functional teams to deliver scalable, multi-tenant enterprise products",
+      descBullets: [
+        "Engineered HRX-Eclectic, a multi-tenant HRM system using Flutter.",
+        "Developed TMX-SD, a global sales platform using Native Android"
+      ]
+    },
+    {
+      role: "Software Engineer",
+      company: "TPS Worldwide",
+      companylogo: require("./assets/images/tpsLogo.jpeg"),
+      date: "Feb 2020 – Apr 2022",
+      desc: "Led the development of complex financial and enterprise applications with a focus on cross-platform efficiency.",
+      descBullets: [
+        "Built SOKIN, a multi-currency app supporting international transactions and digital wallets",
+        "Integrated third-party SDKs to ensure 100% compatibility across Android and iOS devices."
+      ]
+    }
+  ]
+};
+
+/* Your Open Source Section to View Your Github Pinned Projects
+To know how to get github key look at readme.md */
+
+const openSource = {
+  showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
+  display: true // Set false to hide this section, defaults to true
+};
+
+// Some big projects you have worked on
+
+const bigProjects = {
+  title: "Big Projects",
+  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+  projects: [
+    {
+      imageBgColor: "#e0292b",
+      image: require("./assets/images/sokinLogo.svg").default,
+      projectName: "SOKIN",
+      footerLink: [
+        {
+          name: "Visit Website",
+          url: "https://sokin.com/"
+        }
+        //  you can add extra buttons here.
+      ]
+    },
+    {
+      imageBgColor: "#ffffff",
+      image: require("./assets/images/eclecticLogo.svg").default,
+      projectName: "Eclectic ",
+      footerLink: [
+        {
+          name: "Visit Website",
+          url: "https://eclectic.techlogix.com/"
+        }
+      ]
+    },
+    {
+      imageBgColor: "#dde899",
+      image: require("./assets/images/tmxsdLogo.png"),
+      projectName: "Tmx-SD",
+      footerLink: [
+        {
+          name: "Visit Website",
+          url: "https://tlxmobility.com/tmx-sd/"
+        }
+      ]
+    }
+
+  ],
+  display: true // Set false to hide this section, defaults to true
+};
+
+// Achievement Section
+// Include certificates, talks etc
+
+const achievementSection = {
+  title: emoji("Achievements And Certifications 🏆 "),
+  subtitle:
+    "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
+
+  achievementsCards: [
+    {
+      title: "Google Code-In Finalist",
+      subtitle:
+        "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
+      image: require("./assets/images/codeInLogo.webp"),
+      imageAlt: "Google Code-In Logo",
+      footerLink: [
+        {
+          name: "Certification",
+          url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
+        },
+        {
+          name: "Award Letter",
+          url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
+        },
+        {
+          name: "Google Code-in Blog",
+          url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
+        }
+      ]
+    },
+    {
+      title: "Google Assistant Action",
+      subtitle:
+        "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
+      image: require("./assets/images/googleAssistantLogo.webp"),
+      imageAlt: "Google Assistant Action Logo",
+      footerLink: [
+        {
+          name: "View Google Assistant Action",
+          url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
+        }
+      ]
+    },
+
+    {
+      title: "PWA Web App Developer",
+      subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
+      image: require("./assets/images/pwaLogo.webp"),
+      imageAlt: "PWA Logo",
+      footerLink: [
+        { name: "Certification", url: "" },
+        {
+          name: "Final Project",
+          url: "https://pakistan-olx-1.firebaseapp.com/"
+        }
+      ]
+    }
+  ],
+  display: false // Set false to hide this section, defaults to true
+};
+
+// Blogs Section
+
+const blogSection = {
+  title: "Blogs",
+  subtitle:
+    "With Love for Developing cool stuff, I love to write and teach others what I have learnt.",
+  displayMediumBlogs: "true", // Set true to display fetched medium blogs instead of hardcoded ones
+  blogs: [
+    {
+      url: "https://blog.usejournal.com/create-a-google-assistant-action-and-win-a-google-t-shirt-and-cloud-credits-4a8d86d76eae",
+      title: "Win a Google Assistant Tshirt and $200 in Google Cloud Credits",
+      description:
+        "Do you want to win $200 and Google Assistant Tshirt by creating a Google Assistant Action in less then 30 min?"
+    },
+    {
+      url: "https://medium.com/@saadpasta/why-react-is-the-best-5a97563f423e",
+      title: "Why REACT is The Best?",
+      description:
+        "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
+    }
+  ],
+  display: false // Set false to hide this section, defaults to true
+};
+
+// Talks Sections
+
+const talkSection = {
+  title: "TALKS",
+  subtitle: emoji(
+    "I LOVE TO SHARE MY LIMITED KNOWLEDGE AND GET A SPEAKER BADGE 😅"
+  ),
+
+  talks: [
+    {
+      title: "Build Actions For Google Assistant",
+      subtitle: "Codelab at GDG DevFest Karachi 2019",
+      slides_url: "https://bit.ly/saadpasta-slides",
+      event_url: "https://www.facebook.com/events/2339906106275053/"
+    }
+  ],
+  display: false // Set false to hide this section, defaults to true
+};
+
+// Podcast Section
+
+const podcastSection = {
+  title: emoji("Podcast 🎙️"),
+  subtitle: "I LOVE TO TALK ABOUT MYSELF AND TECHNOLOGY",
+
+  // Please Provide with Your Podcast embeded Link
+  podcast: [
+    "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"
+  ],
+  display: false // Set false to hide this section, defaults to true
+};
+
+// Resume Section
+const resumeSection = {
+  title: "Resume",
+  subtitle: "Feel free to download my resume",
+
+  // Please Provide with Your Podcast embeded Link
+  display: true // Set false to hide this section, defaults to true
+};
+
+const contactInfo = {
+  title: emoji("Contact Me ☎️"),
+  subtitle:
+    "Discuss a project or just want to say hi? My Inbox is open for all.",
+  number: "+92-3322005271",
+  email_address: "mzmkhn123@gmail.com"
+};
+
+// Twitter Section
+
+const twitterDetails = {
+  userName: "twitter", //Replace "twitter" with your twitter username without @
+  display: true // Set true to display this section, defaults to false
+};
+
+const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
+
+export {
+  illustration,
+  greeting,
+  socialMediaLinks,
+  splashScreen,
+  skillsSection,
+  educationInfo,
+  techStack,
+  workExperiences,
+  openSource,
+  bigProjects,
+  achievementSection,
+  blogSection,
+  talkSection,
+  podcastSection,
+  contactInfo,
+  twitterDetails,
+  isHireable,
+  resumeSection
+};
