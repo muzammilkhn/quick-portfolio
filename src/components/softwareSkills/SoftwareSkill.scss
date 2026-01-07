@@ -22,10 +22,25 @@
 .software-skill-inline > i:hover {
   color: $skillsColor;
 }
+
+.skill-svg-icon {
+  width: 3rem;
+  height: 3rem;
+  filter: brightness(0) saturate(100%) invert(59%) sepia(6%) saturate(264%) hue-rotate(169deg) brightness(94%) contrast(87%);
+}
+
+.software-skill-inline:hover .skill-svg-icon {
+  filter: brightness(0) saturate(100%) invert(37%) sepia(63%) saturate(2876%) hue-rotate(232deg) brightness(99%) contrast(88%);
+}
+
 .software-skill-inline > p {
   color: $subTitle;
   font-size: 10px;
 }
 .software-skill-inline > i:hover ~ p {
+  color: $skillsColor;
+}
+
+.software-skill-inline:hover > p {
   color: $skillsColor;
 }

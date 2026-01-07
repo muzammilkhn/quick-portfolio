@@ -23,10 +23,10 @@ const greeting = {
   username: "Muzammil",
   title: "Hi all, I'm Muzammil",
   subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
+    "Turning coffee ☕ into high-performance mobile apps. Flutter & Android developer with 6+ years of battle-tested experience."
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
+    "https://drive.google.com/file/d/11SXmpJAVbDC_l3Njl3giXEb88HlhVVr1/view?usp=sharing", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -50,11 +50,14 @@ const skillsSection = {
   subTitle: "CRAZY MOBILE APP DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
   skills: [
     emoji(
-      "⚡ Develop highly interactive Mobile App / User Interfaces for your mobile applications"
+      "⚡ Build high-performance mobile apps using Flutter and native Android/iOS that are fast, smooth, and user-loved"
     ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
+    emoji("🔌 Integrate powerful third-party services like Firebase, REST APIs, payments, maps, and notifications"),
     emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
+      "☁️ Handle backend & cloud workflows with SQL/NoSQL databases, cloud services, and modern tooling"
+    ),
+    emoji(
+      "🚀 Ship production-ready apps on time—thriving in fast-paced teams with a strong delivery mindset"
     )
   ],
 
@@ -64,7 +67,7 @@ https://fontawesome.com/icons?d=gallery */
   softwareSkills: [
     {
       skillName: "Flutter",
-      fontAwesomeClassname: "fa-brands fa-flutter"
+      svgIcon: require("./assets/images/flutterLogo.svg").default
     },
     {
       skillName: "Android",
@@ -144,7 +147,7 @@ const educationInfo = {
       logo: require("./assets/images/ubitLogo.jpeg"),
       subHeader: "Bachelors of Science in Software Engineering",
       duration: "July 2016 - July 2019",
-      desc: "Participated in the research of XXX and published 3 papers.",
+      desc: "Participated in the research of Neural Networks",
     },
     // {
     //   schoolName: "Stanford University",
@@ -191,7 +194,8 @@ const workExperiences = {
       role: "Sr. Software Engineer",
       company: "OCT Daily",
       companylogo: require("./assets/images/octdailyLogo.jpeg"),
-      date: "June 2018 – Present",
+      headerColor: "#c3d361",
+      date: "Nov 2025 – Present",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       descBullets: [
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
@@ -200,17 +204,26 @@ const workExperiences = {
     },
     {
       role: "Sr. Software Engineer",
-      company: "Quora",
+      company: "Techlogix",
       companylogo: require("./assets/images/techlogixLogo.jpeg"),
-      date: "May 2017 – May 2018",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      headerColor: "#601a15",
+      date: "Apr 2022 – Nov 2025",
+      desc: "Architected high-performance mobile solutions and leading cross-functional teams to deliver scalable, multi-tenant enterprise products",
+      descBullets: [
+        "Engineered HRX-Eclectic, a multi-tenant HRM system using Flutter.",
+        "Developed TMX-SD, a global sales platform using Native Android"
+      ]
     },
     {
       role: "Software Engineer",
-      company: "Airbnb",
+      company: "TPS Worldwide",
       companylogo: require("./assets/images/tpsLogo.jpeg"),
-      date: "Jan 2015 – Sep 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      date: "Feb 2020 – Apr 2022",
+      desc: "Led the development of complex financial and enterprise applications with a focus on cross-platform efficiency.",
+      descBullets: [
+        "Built SOKIN, a multi-currency app supporting international transactions and digital wallets",
+        "Integrated third-party SDKs to ensure 100% compatibility across Android and iOS devices."
+      ]
     }
   ]
 };
@@ -230,28 +243,40 @@ const bigProjects = {
   subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
   projects: [
     {
-      image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "Saayahealth",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      imageBgColor: "#e0292b",
+      image: require("./assets/images/sokinLogo.svg").default,
+      projectName: "SOKIN",
       footerLink: [
         {
           name: "Visit Website",
-          url: "http://saayahealth.com/"
+          url: "https://sokin.com/"
         }
         //  you can add extra buttons here.
       ]
     },
     {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      imageBgColor: "#ffffff",
+      image: require("./assets/images/eclecticLogo.svg").default,
+      projectName: "Eclectic ",
       footerLink: [
         {
           name: "Visit Website",
-          url: "http://nextu.se/"
+          url: "https://eclectic.techlogix.com/"
+        }
+      ]
+    },
+    {
+      imageBgColor: "#dde899",
+      image: require("./assets/images/tmxsdLogo.png"),
+      projectName: "Tmx-SD",
+      footerLink: [
+        {
+          name: "Visit Website",
+          url: "https://tlxmobility.com/tmx-sd/"
         }
       ]
     }
+
   ],
   display: true // Set false to hide this section, defaults to true
 };
@@ -314,7 +339,7 @@ const achievementSection = {
       ]
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Blogs Section
@@ -338,7 +363,7 @@ const blogSection = {
         "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Talks Sections
@@ -357,7 +382,7 @@ const talkSection = {
       event_url: "https://www.facebook.com/events/2339906106275053/"
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Podcast Section
@@ -370,7 +395,7 @@ const podcastSection = {
   podcast: [
     "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Resume Section
@@ -386,8 +411,8 @@ const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
     "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+92-0000000000",
-  email_address: "saadpasta70@gmail.com"
+  number: "+92-3322005271",
+  email_address: "mzmkhn123@gmail.com"
 };
 
 // Twitter Section
