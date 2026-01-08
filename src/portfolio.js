@@ -196,10 +196,10 @@ const workExperiences = {
       companylogo: require("./assets/images/octdailyLogo.jpeg"),
       headerColor: "#c3d361",
       date: "Nov 2025 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      desc: "Building AI-powered, healthcare-centric mobile solutions that improve patient care and clinical efficiency.",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Developing intelligent mobile applications for healthcare using AI, computer vision, and data-driven insights",
+        "Focused on secure, scalable, and user-friendly solutions aligned with real-world medical workflows"
       ]
     },
     {
@@ -208,10 +208,10 @@ const workExperiences = {
       companylogo: require("./assets/images/techlogixLogo.jpeg"),
       headerColor: "#601a15",
       date: "Apr 2022 – Nov 2025",
-      desc: "Architected high-performance mobile solutions and leading cross-functional teams to deliver scalable, multi-tenant enterprise products",
+      desc: "Led high-performance mobile architecture for scalable, multi-tenant products.",
       descBullets: [
-        "Engineered HRX-Eclectic, a multi-tenant HRM system using Flutter.",
-        "Developed TMX-SD, a global sales platform using Native Android"
+        "Led the architecture and development of Eclectic, a multi-tenant HRM platform built with Flutter.",
+        "Developed TMX-SD, a global sales enablement platform using Native Android, optimized for enterprise-grade reliability."
       ]
     },
     {
@@ -232,7 +232,7 @@ const workExperiences = {
 To know how to get github key look at readme.md */
 
 const openSource = {
-  showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
+  showGithubProfile: "false", // Set true or false to show Contact profile using Github, defaults to true
   display: true // Set false to hide this section, defaults to true
 };
 
@@ -419,7 +419,7 @@ const contactInfo = {
 
 const twitterDetails = {
   userName: "twitter", //Replace "twitter" with your twitter username without @
-  display: true // Set true to display this section, defaults to false
+  display: false // Set true to display this section, defaults to false
 };
 
 const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
